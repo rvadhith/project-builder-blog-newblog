@@ -17,16 +17,16 @@ public class TestBlog {
 	
 	 @Test
 	 public void testSetterGetter() {
-		 blog.setBlogDescription("ProgrammingLanguage");
-		 blog.setBlogTitle("Java");
-		 blog.setDate(ld);
-		 assertEquals("ProgrammingLanguage",blog.getBlogDescription());
-		 assertEquals("Java",blog.getBlogTitle());
-		 assertEquals(ld,blog.getDate());
+		 blog.setDescription("ProgrammingLanguage");
+		 blog.setTitle("Java");
+		 blog.setPostedOn(ld);
+		 assertEquals("ProgrammingLanguage",blog.getDescription());
+		 assertEquals("Java",blog.getTitle());
+		 assertEquals(ld,blog.getPostedOn());
 		 try {
-			 blog.setBlogDescription(null);
-			 blog.setBlogTitle(null);
-			 blog.setDate(null);
+			 blog.setDescription(null);
+			 blog.setTitle(null);
+			 blog.setPostedOn(null);
 		 }
 		 catch(Exception e) {
 			 e.printStackTrace();
